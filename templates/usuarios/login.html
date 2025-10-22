@@ -20,11 +20,7 @@
     <div class="pagina-inicial" style="margin: 0;">
         <header class="cabecalho">
             <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
-            {% for message in messages %}
-            <div style="background-color: #D9D9D930; padding: .8rem .5rem; border-radius: 8px; color: #D9D9D9;" id="messages">
-                {{message}}
-            </div>
-            {% endfor %}
+            {% include 'partials/_alertas.html' %}
             <div class="cabecalho__busca">
                 <div class="busca__fundo">
                     <form action="{% url 'buscar' %}">

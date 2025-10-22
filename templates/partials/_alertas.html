@@ -1,0 +1,7 @@
+{% if messages %}
+    {% for message in messages %}
+        <div style="background-color: #d9d9d930; padding: 0.8rem 0.5rem; border-radius: 8px; color: #d9d9d9;">
+            {{message}}
+        </div>
+    {% endfor %}
+{% endif %}
